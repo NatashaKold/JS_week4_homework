@@ -6,7 +6,7 @@ const result = originalText.replace(/;/g,';\n');
 
 console.log(`2. Текст с переносами строк: \n ${result}`);
 
-const substring = result.trim();
+const substring = result.replace(/\s/g, '');
 
 console.log(`3. Текст с удалёнными пробелами: ${substring}`);
 
